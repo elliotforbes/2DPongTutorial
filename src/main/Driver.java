@@ -70,9 +70,13 @@ public class Driver {
 	
 	public void run(){
 		init();
+		// Start the timer
 		long lastTime = System.nanoTime();
+		// measure the difference
 		double delta = 0.0;
+		// calculate what 1 second / 60 frames per second equals
 		double ns = 1000000000.0 / 60.0;
+		// 
 		long timer = System.currentTimeMillis();
 		int updates = 0;
 		int frames = 0;

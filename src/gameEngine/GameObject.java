@@ -16,9 +16,9 @@ public class GameObject {
 	public Vector3f position;
 	public int shaderID;
 	
-	private VertexArrayObject vao; 
+	public VertexArrayObject vao; 
 
-	public GameObject(){
+	public GameObject(){	
 	}
 	
 	public void setShaderID(int id){

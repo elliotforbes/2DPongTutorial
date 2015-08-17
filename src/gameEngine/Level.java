@@ -39,10 +39,10 @@ public class Level {
 		player1.draw();
 		ShaderManager.shader1.stop();
 		
-		ShaderManager.shader2.start();
-		ShaderManager.shader2.setUniform3f("pos", player2.position);
+		ShaderManager.shader1.start();
+		ShaderManager.shader1.setUniform3f("pos", player2.position);
 		player2.draw();
-		ShaderManager.shader2.stop();
+		ShaderManager.shader1.stop();
 		
 		ShaderManager.shader3.start();
 		ShaderManager.shader3.setUniform3f("pos", ball.position);

@@ -5,8 +5,6 @@ import utils.Vector3f;
 
 public class Ball extends GameObject{
 
-	private VertexArrayObject vao; 
-	
 	float[] vertices = {
 			0.0f, 0.05f, 0f,
 			0.0f, 0.0f, 0f,
@@ -21,7 +19,7 @@ public class Ball extends GameObject{
 	
 	public Ball(){
 		this.count = indices.length;
-		vao = new VertexArrayObject(this.vertices, this.indices);
+		this.vao = new VertexArrayObject(this.vertices, this.indices);
 		this.vaoID = vao.getVaoID();
 		this.position = new Vector3f();
 	}
